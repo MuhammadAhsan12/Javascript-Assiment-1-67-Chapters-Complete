@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="createTable()">
+    <form action="">
+        <h1>Sign up</h1>
+        <label for="username">Username:</label><input id="username" type="text">
+        <label for="email">email:</label><input id="email" type="text">
+    </form>
+    <button onclick="submit()">submit</button>
+    <p id="showusername"></p>
+    <p id="showemail"></p>
+
+    <br>
+    <br>
+    <p id="sometext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. <a href="javascript:void(0)" id="read"
+            onclick="readMore()">Read More</a></p>
+
+
+
+    <h3>
+        Click the "Add New Row" button to add a new row to the table. <br> Enter values in each row and press the
+        "Submit Data" button.
+    </h3>
+
+    <p>
+        <input type="button" id="addRow" value="Add New Row" onclick="addRow()" />
+    </p>
+
+    <div id="cont"></div> <!-- the container to add the TABLE -->
+
+    <p>
+        <input type="button" id="bt" value="Submit Data" onclick="submit()" />
+    </p>
+
+    <p id='output'></p>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
